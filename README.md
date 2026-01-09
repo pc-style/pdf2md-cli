@@ -34,13 +34,13 @@ A blazing fast CLI tool that converts PDFs to nicely formatted markdown files. R
 
 ### Global Installation
 
-To install the tool globally on your system:
+To install the tool globally on your system (requires sudo for `/usr/local/bin`):
 
 ```bash
-bun install -g .
+./install.sh
 ```
 
-This will make the `pdf2md` command available anywhere.
+This will build the binary and move it to `/usr/local/bin/pdf2md`, making the `pdf2md` command available anywhere.
 
 ## Usage
 

@@ -12,13 +12,9 @@ The easiest way to install is using the provided installation script:
 ./install.sh
 ```
 
-Alternatively, you can do it manually:
+### Manual Installation
 
 1. Clone the repository:
-...
-```bash
-bun install -g .
-```
    ```bash
    git clone https://github.com/pc-style/pdf2md-cli.git
    cd pdf2md-cli
