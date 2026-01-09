@@ -32,9 +32,15 @@ A blazing fast CLI tool that converts PDFs to nicely formatted markdown files. R
     bun run build
     ```
 
+### Quick Install (One-liner)
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/pc-style/pdf2md-cli/main/install.sh)
+```
+
 ### Global Installation
 
-To install the tool globally on your system (requires sudo for `/usr/local/bin`):
+To install the tool globally on your system manually (requires sudo for `/usr/local/bin`):
 
 ```bash
 ./install.sh

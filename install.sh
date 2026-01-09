@@ -7,12 +7,38 @@ set -e
 
 APP_NAME="pdf2md"
 INSTALL_DIR="/usr/local/bin"
+REPO_URL="https://github.com/pc-style/pdf2md-cli.git"
 
 # Colors for output
 GREEN='\033[0;32m'
 RED='\033[0;31m'
 YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
+
+# Check if we are in the project directory
+if [ ! -f "package.json" ]; then
+    echo -e "${YELLOW}Project not found in current directory. Downloading source...${NC}"
+    
+    # Check for git
+    if ! command -v git &> /dev/null; then
+        echo -e "${RED}Error: Git is required for remote installation.${NC}"
+        exit 1
+    fi
+
+    # Create temp directory
+    TEMP_DIR=$(mktemp -d)
+    
+    # Setup cleanup trap
+    cleanup() {
+        echo -e "${YELLOW}Cleaning up temporary files...${NC}"
+        rm -rf "$TEMP_DIR"
+    }
+    trap cleanup EXIT
+
+    # Clone into temp
+    git clone --depth 1 "$REPO_URL" "$TEMP_DIR"
+    cd "$TEMP_DIR"
+fi
 
 echo -e "${GREEN}Installing ${APP_NAME} globally...${NC}"
 
