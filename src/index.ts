@@ -7,8 +7,7 @@ import packageJson from '../package.json' with { type: "json" };
 const program = new Command();
 
 program
-  .name('pdf2md')
-  .description('Convert PDFs to Markdown using Bun and Gemini AI')
+  .description('Convert PDFs to Markdown using Bun and Gemini 3 Flash Preview AI')
   .version(packageJson.version)
   .addCommand(convertCommand, { isDefault: true })
   .addCommand(configCommand);

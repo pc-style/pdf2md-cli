@@ -4,7 +4,7 @@ import chalk from 'chalk';
 
 export const configCommand = new Command('config')
   .description('Configure PDF2MD settings')
-  .option('-k, --key <key>', 'Set Gemini API Key')
+  .option('-k, --key <key>', 'Set Gemini 3 Flash Preview API Key')
   .option('-d, --delete', 'Delete stored API Key')
   .option('-s, --show', 'Show current API Key (masked)')
   .action((options) => {

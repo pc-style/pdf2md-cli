@@ -1,7 +1,7 @@
 {
   "name": "pdf2md-cli",
   "version": "1.0.0",
-  "description": "Fast PDF to Markdown converter using Bun and Gemini AI",
+  "description": "Fast PDF to Markdown converter using Bun and Gemini 3 Flash Preview AI",
   "type": "module",
   "bin": {
     "pdf2md": "./bin/pdf2md"

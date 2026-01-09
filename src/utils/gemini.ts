@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
-export async function convertToMarkdown(text: string, apiKey: string, modelName: string = 'gemini-1.5-flash'): Promise<string> {
+export async function convertToMarkdown(text: string, apiKey: string, modelName: string = 'gemini-3-flash-preview'): Promise<string> {
   const genAI = new GoogleGenerativeAI(apiKey);
   const model = genAI.getGenerativeModel({ model: modelName });
 

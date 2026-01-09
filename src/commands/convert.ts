@@ -68,7 +68,7 @@ export const convertCommand = new Command('convert')
   .argument('<input>', 'Input file or directory')
   .option('-m, --mode <mode>', 'Mode: standalone (text extract) or ai (Gemini)', 'standalone')
   .option('-o, --output <output>', 'Output file path (only for single file)')
-  .option('-k, --api-key <key>', 'Gemini API Key (overrides config)')
+  .option('-k, --api-key <key>', 'Gemini 3 Flash Preview API Key (overrides config)')
   .action(async (input, options) => {
     const apiKey = options.apiKey || getApiKey();
     const mode = options.mode;

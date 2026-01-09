@@ -5,7 +5,7 @@ A blazing fast CLI tool that converts PDFs to nicely formatted markdown files. R
 ## Features
 
 - **Blazing Fast**: Built on Bun.
-- **AI-Powered**: Uses Google Gemini 1.5 Flash for intelligent formatting.
+- **AI-Powered**: Uses Google Gemini 3 Flash Preview for intelligent formatting.
 - **Standalone Mode**: Quick raw text extraction.
 - **Bulk Processing**: Convert entire directories recursively.
 - **Configurable**: Persist your API key so you don't have to type it every time.
